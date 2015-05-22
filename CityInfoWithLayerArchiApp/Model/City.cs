@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CityInfoWithLayerArchiApp.Model
 {
-    class City
+   public class City
     {
         public string Name{ get; set; }
         public string About { set; get; }

@@ -48,16 +48,16 @@
     <Compile Include="BLL\CityManager.cs" />
     <Compile Include="DAL\CityGateway.cs" />
     <Compile Include="Model\City.cs" />
-    <Compile Include="UI\Form1.cs">
+    <Compile Include="UI\CityInfoUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="UI\CityInfoUI.Designer.cs">
+      <DependentUpon>CityInfoUI.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="UI\Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="UI\CityInfoUI.resx">
+      <DependentUpon>CityInfoUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

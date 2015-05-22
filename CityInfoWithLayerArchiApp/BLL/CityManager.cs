@@ -14,15 +14,49 @@ namespace CityInfoWithLayerArchiApp.BLL
 
         public string Save(City aCity)
         {
-            int value = gateway.Save(aCity);
-            if (value>0)
-            {
-                return "Data save successfully.";
-            }
-            else
-            {
-                return "Fail";
-            }
+            //if (aCity.Name == null)
+            //{
+            //    return "Please insert the city name.";
+            //}
+            //else
+            //{
+
+            if (gateway.IsCityExist(aCity))
+                {
+                    return "The city name already exist.";
+                }
+                else
+                {
+
+
+                    int value = gateway.Save(aCity);
+                    if (value > 0)
+                    {
+                        return "Data save successfully.";
+                    }
+                    else
+                    {
+                        return "Fail";
+                    }
+
+                 }
+            
+                
+           // }
         }
+
+       public List<City> LoadAllCities()
+       {
+           return gateway.LoadCities();
+       }
+
+        public List<City> SearchByCities(City aCity)
+        {
+            return gateway.SearchByCity(aCity);
+        }
+        public List<City> SearchByCountry(City aCity)
+        {
+            return gateway.SearchByCountry(aCity);
+        } 
     }
 }

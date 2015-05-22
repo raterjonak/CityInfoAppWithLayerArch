@@ -1,6 +1,6 @@
 ﻿namespace CityInfoWithLayerArchiApp
 {
-    partial class Form1
+    partial class CityInfoUI
     {
         /// <summary>
         /// Required designer variable.
@@ -131,6 +131,7 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "Search";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // searchTextBox
             // 
@@ -214,15 +215,16 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "City Name";
             // 
-            // Form1
+            // CityInfoUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(682, 454);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "CityInfoUI";
+            this.Text = "CityInfoUI";
+            this.Load += new System.EventHandler(this.CityInfoUI_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
